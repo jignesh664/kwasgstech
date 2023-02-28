@@ -1,0 +1,86 @@
+
+{% extends 'header.html' %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+	
+	<section id="hero" class="d-flex align-items-center">
+	
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+			<br>
+			<br>
+			
+			<!-- <h1>Better Solutions For Your Business</h1> -->
+			<h1>Career</h1>
+			<!-- <h2>KWARGS Technology aids you in developing high-quality software and giving your end consumers the best possible experience.we are high performers who ensure that your product runs smoothly and adds value</h2> -->
+			<h2>Start your career with us! </h2>
+			<div class="d-flex justify-content-center justify-content-lg-start">
+       
+			  <a href="" class="btn-get-started scrollto">Click to Apply</a>
+       
+			 <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+			</div>
+		  </div>
+		  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+			<img src="{% static 'img/why-us.png' %}" class="img-fluid animated" alt="">
+		  </div>
+		</div>
+	  </div>
+	
+	  </section><!-- End Hero -->
+
+
+      <section id="Testimonials" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+  
+            <div class="section-title">
+                <h2>Current Openings</h2>
+                <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+            </div>
+  
+            <div class="row">
+                {% for p in l %}
+                <div class="col-lg-6">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="{% static 'img/final.jpg' %}" class="img-fluid" alt="" style="width:30 ; height: 30;"></div>
+                    
+                    <div class="member-info">
+                       <h4>{{p.post_name}}</h4>
+                       
+                       <!-- <span>Business</span> -->
+                        <span>Ahmedabad, India</span>
+                        <br>
+                       
+                        <div class="pricing" data-aos="fade-up">
+                            <a href="{% url 'Job_Post' pk=p.pk  %}" class="buy-btn">Click to Apply</a>
+                        </div> 
+                        <br>
+                   
+                    </div>
+                </div>
+                </div>
+    
+                {% endfor %}
+
+    
+            </div>
+  
+        </div>
+    </section>  
+
+    <br>
+    <br>
+    <br>
+
+
+	
+</body>
+</html>
+
+{% endblock %}

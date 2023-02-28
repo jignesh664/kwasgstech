@@ -1,0 +1,184 @@
+
+{% extends 'header.html' %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+	
+	<section id="hero" class="d-flex align-items-center">
+
+		<style>
+		  .alert {
+			  padding: 20px;
+			  background-color: hsl(120, 92%, 20%);
+			  color: white;
+	
+		  }
+	
+		  .closebtn {
+			  margin-left: 15px;
+			  color: white;
+			  font-weight: bold;
+			  float: right;
+			  font-size: 22px;
+			  line-height: 20px;
+			  cursor: pointer;
+			  transition: 0.3s;
+		  }
+	
+		  .closebtn:hover {
+			  color: black;
+		  }
+	  </style>
+	
+			{% if messages %}
+				<ul class="messages">
+					{% for msg in messages %}
+					<div class="alert">
+						<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						<strong>{{msg}}</strong>
+					</div>
+					{% endfor %}
+				</ul>
+			{% endif %}
+	
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+			<br>
+			<br>
+			
+			<!-- <h1>Better Solutions For Your Business</h1> -->
+			<h1>About Us</h1>
+			<!-- <h2>KWARGS Technology aids you in developing high-quality software and giving your end consumers the best possible experience.we are high performers who ensure that your product runs smoothly and adds value</h2> -->
+			<h2>KWARGS Technology aids you in developing high-quality software and giving end consumers the best possible experience.</h2>
+			<div class="d-flex justify-content-center justify-content-lg-start">
+			  <a href="{% url 'contact' %}" class="btn-get-started scrollto">CONTACT US</a>
+			 <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+			</div>
+		  </div>
+		  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+			<img src="{% static 'img/hero4-img.png' %}" class="img-fluid animated" alt="">
+		  </div>
+		</div>
+	  </div>
+	
+	  </section><!-- End Hero -->
+
+	<!-- ======= About Section ======= -->
+    <section id="about" class="about">
+		<div class="container">
+  
+		  <div class="section-title">
+			<h2>About US</h2> 
+		  </div>
+  
+		  <div class="row">
+			<div class="col-lg-6" data-aos="zoom-in">
+  
+			  <img src="{% static 'img/about.png' %}" class="img-fluid" alt="" >
+			</div>
+			<div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left" >
+			  <div class="content pt-4 pt-lg-0">
+				<!-- <h2>KWARGS Technology</h2> -->
+			   
+				<p>
+				  We are a devoted team of passionate IT professionals who work with well-laid ideas and insights combined with years of expertise for project success and complete customer satisfaction.
+				</p>
+				<ul>
+				  <li><i class="ri-check-double-line"></i> We offer 360-degree services for your digital development and progress.</li>
+				  <li><i class="ri-check-double-line"></i> At KWARGS Technology, we are deeply committed to building extremely captivating apps that precisely match business needs and cater to a wide range of projects, all with the goal of complete client satisfaction in mind.</li>
+				  <li><i class="ri-check-double-line"></i> We have a fantastic team of web application developers who are capable of developing sophisticated, inventive, and high-performing websites. With our unrivaled web & mobile application development services, we guarantee to produce high-performance applications tailored to your company’s exact requirements.</li>
+				</ul>
+				<p>
+					  
+				</p>
+				<p>
+				  
+				</p>
+			  </div>
+			</div>
+		  </div>
+  
+		</div>
+	  </section><!-- End About Section -->
+	
+  
+  
+	  <!-- ======= Why Us Section ======= -->
+	  <section id="why-us" class="why-us section-bg">
+		<div class="container-fluid" data-aos="fade-up">
+  
+		  <div class="section-title">
+			<!-- <h2>Why Us</h2> -->
+		  </div>
+  
+		  <div class="row">
+  
+			<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+  
+			  <div class="content">
+				<h3><strong>Why KWARGS Technology?</strong></h3>
+				<p>
+				  MODERN DESIGN, QUALITY WORK, CUSTOMERS SATISFACTION 
+  
+				</p>
+			  </div>
+  
+			  <div class="accordion-list">
+				<ul>
+				  <li>
+					<a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span>Flexible hiring models<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+					<div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+					  <p>
+						Hourly & Dedicated hiring models make it easy for you to get the work done!
+					  </p>
+					</div>
+				  </li>
+  
+				  <li>
+					<a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Save cost and time <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+					<div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+					  <p>
+						Reduce development costs while maintaining timeliness and profitability.
+					  </p>
+					</div>
+				  </li>
+  
+				  <li>
+					<a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span>Scale up and get to market sooner<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+					<div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+					  <p>
+						Grow your team, acquire more help, improve your processes, and get to market faster.
+					  </p>
+					</div>
+				  </li>
+  
+				  <li>
+					<a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span>Control your team, anywhere & everywhere<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+					<div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+					  <p>
+						Start with a small or large team, own it, and train it whenever and wherever you want.
+					  </p>
+					</div>
+				  </li>
+  
+				</ul>
+			  </div>
+  
+			</div>
+  
+			<div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("/static/img/hero1-img.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+		  </div>
+  
+		</div>
+	  </section>
+	  <!-- End Why Us Section -->
+  
+</body>
+</html>
+
+{% endblock %}

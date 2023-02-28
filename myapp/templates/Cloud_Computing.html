@@ -1,0 +1,173 @@
+
+{% extends 'header.html' %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+	
+	<section id="hero" class="d-flex align-items-center">
+	
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+			<br>
+			<br>
+			
+			<!-- <h1>Better Solutions For Your Business</h1> -->
+			<h1>AWS Services </h1>
+			<!-- <h2>KWARGS Technology aids you in developing high-quality software and giving your end consumers the best possible experience.we are high performers who ensure that your product runs smoothly and adds value</h2> -->
+			<h2>Transform your business on the Cloud?</h2>
+			<div class="d-flex justify-content-center justify-content-lg-start">
+			  <a href="{% url 'contact' %}" class="btn-get-started scrollto">CONTACT US</a>
+			 <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+			</div>
+		  </div>
+		  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+			<img src="{% static 'img/why-us.png' %}" class="img-fluid animated" alt="">
+		  </div>
+		</div>
+	  </div>
+	
+	  </section><!-- End Hero -->
+
+      <!-- ======= Services We Offer====== -->
+       <section id="FAQ" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>AWS Services</h2>
+            <p></p>
+          </div>
+
+            <div class="row">
+    
+                <div class="col-lg-12">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                    <!-- <div class="pic"><img src="{% static 'img/jmplogo.jpeg' %}" class="img-fluid" alt=""></div> -->
+                    <i class="ri-check-double-line"></i>
+                    <div class="member-info">
+                    <h4>Build Agile and Secure Systems on AWS </h4>
+                    <span></span>
+                    <p>Be it modernization or transformation on the cloud, KWARGS’ certified AWS experts help you select the platform that aligns with immediate business objectives. Get cutting-edge, native cloud solutions that matter, irrespective of the environment that hosts your applications and workloads. Build secure cloud solutions with faster time to market and complete control in ownership, utilization, and access tailored to specific requirements.</p>
+                    <!-- <div class="social">
+                        <a href=""><i class="ri-twitter-fill"></i></a>
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+      </section><!-- End Services We Offer Section -->
+
+
+       <!-- ======= Team Section ======= -->
+    <section id="Testimonials" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Our Offerings</h2>
+            <!-- <h3>Automation Testing</h3> -->
+          </div>
+  
+            <div class="row">
+  
+                <div class="col-lg-6">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                    <!-- <div class="pic"><img src="{% static 'img/jmplogo.jpeg' %}" class="img-fluid" alt=""></div> -->
+                    <i class="ri-check-double-line"></i>
+                    <div class="member-info">
+                       <h4>IaaS</h4>
+                    <span>Infrastructure as a Service</span>
+                    <p>Get pay-as-you-go access to compute resources, including servers, networking, and storage on-demand and at scale. Realize virtualization of administrative tasks and eliminate single point of failure.</p>
+                    <!-- <div class="social">
+                        <a href=""><i class="ri-twitter-fill"></i></a>
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div> -->
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                    <!-- <div class="pic"><img src="{% static 'img/parasar.jpeg' %}" class="img-fluid" alt=""></div> -->
+                    <i class="ri-check-double-line"></i>
+                    <div class="member-info">
+                    <h4>PaaS</h4>
+                    <span>Platform as a service</span>
+                    <p>Develop, manage, and deliver applications with pre-built tools without worrying about the underlying infrastructure. Leverage managed security, backups, server software, and operating systems.</p>
+
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+                    <!-- <div class="pic"><img src="{% static 'img/ravi..png' %}" class="img-fluid" alt=""></div> -->
+                    <i class="ri-check-double-line"></i>
+                    <div class="member-info">
+                    <h4>Data Analytics</h4>
+                    <p>Become a data-driven business by utilizing analytics and insights for informed decision-making. Leverage advanced analytical techniques to build capabilities and deliver solutions that drive growth actions.</p>
+                    
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+                    <!-- <div class="pic"><img src="{% static 'img/hb.jpeg' %}" class="img-fluid" alt=""></div> -->
+                    <i class="ri-check-double-line"></i>
+                    <div class="member-info">
+                    <h4>Kubernetes</h4>
+                    <p>Run and scale containerized applications in AWS. Automate application scaling and get efficient compute resources to reduce costs. Apply security patches to cluster control panels for ensuring a secure Kubernetes environment.</p>
+                   
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+                    <!-- <div class="pic"><img src="{% static 'img/hb.jpeg' %}" class="img-fluid" alt=""></div> -->
+                    <i class="ri-check-double-line"></i>
+                    <div class="member-info">
+                        <h4>Serverless</h4>
+                        <p>Automate  compliance  monitoring and security  checks for  your serverless applications and workloads. Ensure a broader, up-to-date scanning of vulnerabilities to eliminate false positives.</p>
+                       
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-lg-6 mt-3">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+                    <!-- <div class="pic"><img src="{% static 'img/hb.jpeg' %}" class="img-fluid" alt=""></div> -->
+                    <i class="ri-check-double-line"></i>
+                    <div class="member-info">
+                        <h4>Monitoring</h4>
+                        <p>Maintain a 360-degree view of cloud resources and applications on a single platform. Improve resource optimization and operational performance using a pre-defined set of algorithms or thresholds for early mitigation of anomalous behavior.</p>
+                        
+                    </div>
+                </div>
+                </div>
+
+
+            
+  
+            </div>
+  
+        </div>
+    </section>
+      <!-- End Team Section -->
+  
+	
+</body>
+</html>
+
+{% endblock %}

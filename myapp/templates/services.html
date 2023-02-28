@@ -1,0 +1,221 @@
+
+{% extends 'header.html' %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+	
+	<section id="hero" class="d-flex align-items-center">
+	
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+			<br>
+			<br>
+			
+			<!-- <h1>Better Solutions For Your Business</h1> -->
+			<h1>Services</h1>
+			<!-- <h2>KWARGS Technology aids you in developing high-quality software and giving your end consumers the best possible experience.we are high performers who ensure that your product runs smoothly and adds value</h2> -->
+			<h2>KWARGS Technology is india’s most trusted IT service company that provides end-to-end digital services.</h2>
+			<div class="d-flex justify-content-center justify-content-lg-start">
+			  <a href="{% url 'contact' %}" class="btn-get-started scrollto">CONTACT US</a>
+			 <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+			</div>
+		  </div>
+		  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+			<img src="{% static 'img/why-us.png' %}" class="img-fluid animated" alt="">
+		  </div>
+		</div>
+	  </div>
+	
+	  </section><!-- End Hero -->
+
+
+
+
+    <!-- ======= Services We Offer====== -->
+    <section id="FAQ" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p></p>
+        </div>
+
+          <div class="row">
+  
+              <div class="col-lg-12">
+              <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                  <!-- <div class="pic"><img src="{% static 'img/jmplogo.jpeg' %}" class="img-fluid" alt=""></div> -->
+                  <i class="ri-check-double-line"></i>
+                  <div class="member-info">
+                  <h4>Services We Offer</h4>
+                  <span></span>
+                  <p>KWARGS Technology uses industry best practices to provide startups, SMEs, and businesses with secure, robust, and scalable IT development services. With the competent delivery of unique, tailor-made apps, our IT development company helps businesses transform and achieve a competitive edge. Using latest technologies such as Machine Learning, and Cloud Computing, our qualified team of specialists has provided various customized software solutions.</p>
+                  <!-- <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div> -->
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      </div>
+    </section><!-- End Services We Offer Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services We Offer</h2>
+          <p>KWARGS Technology is India’s most trusted IT service company that provides end-to-end digital services.</p>
+          <!-- <p>KWARGS Technology uses industry best practices to provide startups, SMEs, and businesses with secure, robust, and scalable IT development services. With the competent delivery of unique, tailor-made apps, our IT development company helps businesses transform and achieve a competitive edge. Using latest technologies such as Machine Learning, and Cloud Computing, our qualified team of specialists has provided various customized software solutions.</p> -->
+
+              
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bxs-game'></i></div>
+              <h4><a href="{% url 'Game_development' %}">Game Development</a></h4>
+              <p>We are game development studio specialized in MMO mobile games, Tablet games and PC games.</p>
+              <br>
+              <br>
+              <div class="pricing" data-aos="fade-up">
+                <a href="{% url 'Game_development' %}" class="buy-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bx-mobile'></i></div>
+              <h4><a href="{% url 'React_Native_Development' %}">Mobile App Development</a></h4>
+              <p>To achieve astonishing success, we blend the potential of development with the advanced features of the React Native platform to build iOS and Android application.</p>
+              <br>
+              <div class="pricing" data-aos="fade-up">
+                <a href="{% url 'React_Native_Development' %}" class="buy-btn">Learn More</a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-android"></i></div>
+              <h4><a href="{% url 'Web_Development' %}">Web Development</a></h4>
+              <p>KWARGS Tech can help you to transform your website into a high-performing marketing tool that tells a visual story about your brand.</p>
+              <br>
+              <div class="pricing" data-aos="fade-up">
+                <a href="{% url 'Web_Development' %}" class="buy-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          
+         
+           
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-cog"></i></div>
+              <h4><a href="{% url 'Quality_Assurance_Services' %}">Quality Assurance</a></h4>
+              <p>A solution that properly suits the client’s business objectives” is what quality means in our service paradigm.</p>
+              <br>
+              <div class="pricing" data-aos="fade-up">
+                <a href="{% url 'Quality_Assurance_Services' %}" class="buy-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          
+          
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+  
+       <!-- ======= Services We Offer====== -->
+       <section id="FAQ" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Services We Offer</h2>
+            <p></p>
+          </div>
+  
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Quality Assurance Services
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                  <p>
+                    KWARGS Technology assists you in delivering high-quality apps and providing the greatest possible experience to your end users. We are high achievers who ensure that your product runs smoothly and adds value to your consumers’ lives. We’ve built comprehensive testing processes, for both manual & automatic testing techniques, and practices targeted to your individual business goals, based on our experience in various industries. Whatever industry you’re in, we’ll make sure your consumers get the finest solution for their needs.
+                  </p>
+                  
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Game Development <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Our hearty specialized craftsmanship group, accomplices with our clients to guarantee devices and cycles are in a state of harmony, and our craftsmen and creators can work really. We give game instruments advancement as Research and development and programming administrations.
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Cloud Computing Services <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    KWARGS Technology provides fully customized and tailored Cloud computing services that are modified and sculpted to meet the individual business objectives of our clients. When you use Cloud computing, you open up a whole new world of potentials that didn’t exist before. We at KWARGS Technology are dedicated to unlocking this potential for your company and allowing you to experience the beauty of Cloud in the most efficient way possible.
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="400">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Web Development <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Our team of experts uses the most cutting-edge techniques and technology to produce the best Android apps in the industry. Hiring us will not only increase your consumer base and revenue, but it will also provide you a competitive edge over your competition. Our programmers are proficient in native programming languages such as Java and Kotlin, as well as hybrid programming languages such as React Native, iOS, Flutter, and Ionic. We are a step ahead when it comes to providing top-notch and innovative Android application development solutions to startups and organizations.
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="500">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Mobile App Development<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Our domain experience and technological expertise as a leading React Native app development company in India helps software firms and start-ups overcome problems and promote innovation and success in the digital world. We deliver constant innovation and rapid iteration to help businesses build high-end React Native cross-platform apps from the ground up. Our outsource React Native app development services assist in the development of unique React
+                    Native apps & websites that provide a genuinely native experience with a short time to market. We create scalable solutions and business strategies that provide long-term value to clients all around the world.
+                  </p>
+                </div>
+              </li>
+  
+            </ul>
+          </div>
+  
+        </div>
+      </section><!-- End Services We Offer Section -->
+  
+	
+  
+  
+  
+  
+	  
+  
+	
+
+</body>
+</html>
+
+{% endblock %}

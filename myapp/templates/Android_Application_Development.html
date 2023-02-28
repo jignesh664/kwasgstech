@@ -1,0 +1,135 @@
+
+{% extends 'header.html' %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+	
+	<section id="hero" class="d-flex align-items-center">
+	
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+			<br>
+			<br>
+			
+			<!-- <h1>Better Solutions For Your Business</h1> -->
+			<h1>Android Application Development</h1>
+			<!-- <h2>KWARGS Technology aids you in developing high-quality software and giving your end consumers the best possible experience.we are high performers who ensure that your product runs smoothly and adds value</h2> -->
+			<h2>Want to be agile Android Application? </h2>
+			<div class="d-flex justify-content-center justify-content-lg-start">
+			  <a href="{% url 'contact' %}" class="btn-get-started scrollto">CONTACT US</a>
+			 <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+			</div>
+		  </div>
+		  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+			<img src="{% static 'img/why-us.png' %}" class="img-fluid animated" alt="">
+		  </div>
+		</div>
+	  </div>
+	
+	  </section><!-- End Hero -->
+
+    
+      <!-- ======= Services We Offer====== -->
+      <section id="FAQ" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Services We Offer</h2>
+            <p></p>
+          </div>
+  
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Develop Custom Android Apps Across Platforms
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                  <p>
+                    Are you thinking about high reliability, effectiveness, and performance for your Android applications? KWARGS’ Android development solutions guarantee top-notch UI/UX design and customized developments that ensure building glitch-free software. Make the most of our security-first process that encompasses manual and automated testing to deliver robust products that enhance user satisfaction.
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">How Do We Do It? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    KWARGS’ Android application development service is based on a proven, transparent, and efficient process tagged along with expert resources. Build prototypes, craft marketing strategies, and get continuous support post-product launches.
+                  </p>
+                </div>
+              </li>
+  
+  
+            </ul>
+          </div>
+  
+        </div>
+      </section><!-- End Services We Offer Section -->
+      
+
+    <section id="Android" class="pricing">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Our Offerings</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h3>Initiate</h3>
+                <!-- <h4><sup>$</sup>0<span>per month</span></h4> -->
+                <ul>
+                  <li><i class="bx bx-check"></i> Analyze Requirements</li>
+                  <li><i class="bx bx-check"></i> Utilize expert resources</li>
+                  <li><i class="bx bx-check"></i> Generate technical documents</li>
+                  <li><i class="bx bx-check"></i> Build fundamental prototypes</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="buy-btn">CONTACT US</a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="box featured">
+                <h3>Develop</h3>
+                <ul>
+                  <li><i class="bx bx-check"></i> Leverage proven methodology</li>
+                  <li><i class="bx bx-check"></i> Ensure code quality</li>
+                  <li><i class="bx bx-check"></i> Test user acceptance</li>
+                  <li><i class="bx bx-check"></i> Move to production</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="buy-btn">CONTACT US</a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="box">
+                <h3>Support</h3>
+                <ul>
+                  <li><i class="bx bx-check"></i> 24/7 assistance</li>
+                  <li><i class="bx bx-check"></i> Developer support</li>
+                  <li><i class="bx bx-check"></i> Monitoring </li>
+                  <li><i class="bx bx-check"></i> Maintenance</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="buy-btn">CONTACT US</a>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+    </section> 
+
+  
+	
+</body>
+</html>
+
+{% endblock %}

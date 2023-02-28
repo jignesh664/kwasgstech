@@ -1,0 +1,90 @@
+
+{% extends 'header.html' %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+	
+	<section id="hero" class="d-flex align-items-center">
+	
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+			<br>
+			<br>
+			
+			<!-- <h1>Better Solutions For Your Business</h1> -->
+			<h1>Sitemap </h1>
+			<!-- <h2>KWARGS Technology aids you in developing high-quality software and giving your end consumers the best possible experience.we are high performers who ensure that your product runs smoothly and adds value</h2> -->
+			<h2>Our offerings usefullinks.</h2>
+			<div class="d-flex justify-content-center justify-content-lg-start">
+			  <a href="{% url 'contact' %}" class="btn-get-started scrollto">CONTACT US</a>
+			 <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+			</div>
+		  </div>
+		  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+			<img src="{% static 'img/why-us.png' %}" class="img-fluid animated" alt="">
+		  </div>
+		</div>
+	  </div>
+	
+	  </section><!-- End Hero -->
+
+
+    <section id="Testimonials" class="team section-bg">
+
+       
+      <div class="container" data-aos="fade-up">
+        <!-- <div class="row"> -->
+
+          <div class="section-title">
+            <h2>Sitemap</h2>
+            <p></p>
+          </div>
+          
+
+          <div class="col-lg-12">
+            <h4>Useful Links</h4>
+            <ul>
+              <li> <a href="/">Home</a></li>
+              <li> <a href="{% url 'about' %}">About Us</a></li>
+              <li> <a href="{% url 'services' %}">Services</a></li>
+              <li> <a href="{% url 'contact' %}">Contact Us</a></li>
+              <li> <a href="{% url 'career' %}">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-12">
+            <h4>Services</h4>
+            <ul>
+              <li> <a href="{% url 'Quality_Assurance_Services' %}">Quality Assurance (QA)</a></li>
+              <li> <a href="{% url 'Cloud_Computing' %}">Cloud Computing</a></li>
+              <li> <a href="{% url 'Web_Development' %}">Web Development</a></li>
+              <li> <a href="{% url 'React_Native_Development' %}">React Native Development</a></li>
+              
+            </ul>
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Quality_Assurance_Services' %}">Quality Assurance (QA)</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Cloud_Computing' %}">Cloud Computing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Web_Development' %}">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'React_Native_Development' %}">React Native</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Android_Application_Development' %}">Android Application Development</a></li>
+            </ul>
+          </div> -->
+
+        <!-- </div> -->
+      </div>
+    </section> 
+
+     
+</body>
+</html>
+
+{% endblock %}

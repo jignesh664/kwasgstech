@@ -1,0 +1,214 @@
+
+{% extends 'header.html' %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+  
+    <section id="hero" class="d-flex align-items-center">
+      
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <br>
+        <br>
+        
+
+
+        <style>
+          .alert {
+              padding: 20px;
+              
+              background-color: hsl(120, 92%, 20%);
+              color: white;
+    
+          }
+    
+          .closebtn {
+              margin-left: 15px;
+              color: white;
+              font-weight: bold;
+              float: right;
+              font-size: 22px;
+              line-height: 20px;
+              cursor: pointer;
+              transition: 0.3s;
+          }
+    
+          .closebtn:hover {
+              color: black;
+          }
+      </style>
+    
+        
+      
+            {% if messages %}
+                <ul class="messages">
+                    {% for msg in messages %}
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <strong>{{msg}}</strong>
+                    </div>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+    
+
+        <!-- <h1>Better Solutions For Your Business</h1> -->
+        <h1>{{p.Title}}</h1>
+        <!-- <h2>KWARGS Technology aids you in developing high-quality software and giving your end consumers the best possible experience.we are high performers who ensure that your product runs smoothly and adds value</h2> -->
+        <h2>Start your career with us! </h2>
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <!-- <a href="{% url 'contact' %}" class="btn-get-started scrollto">CONTACT US</a> -->
+        <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+        </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <img src="{% static 'img/why-us.png' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+      </div>
+    
+    </section><!-- End Hero -->
+        
+    
+  
+
+    
+	  <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="section-title">
+                <h2>{{p.Title}}</h2>
+                <p></p>
+              </div>
+              
+              <div class="row">
+
+                  <div class="col-lg-7">
+                    
+                    <!-- <h3 class="mb-4">{{p.Title}}</h3> -->
+                    <p class="mb-2"><strong>Job Category:</strong> | <small>{{p.Job_Category}}</small></p>
+                    <p class="mb-2"><strong>Job Type:</strong> | <small>{{p.Job_Type}}</small></p>
+                    <p class="mb-2"><strong>Job Location:</strong> | <small>{{p.Job_Location}}</small></p>
+
+                    <p>{{p.Brief}}</p>
+                    <!-- <p>The ideal candidate will have experience in all stages of the sales cycle. They should be confident with building new client relationship and maintaining existing ones. They should have evidence of strong skills and possess good negotiation skills.</p> -->
+                    
+                    <p class="mb-2"><strong>Responsibilities:</strong> </p>
+                    <!-- <ul><li>{{p.Responsibilities}}</li><li>{{p.Responsibilities1}}</li></ul> -->
+                    
+                    {% for p in a %}
+                    <ul><li>{{p.Responsibilite}}</li></ul>
+                    {% endfor %}
+                    
+                    <p class="mb-2"><strong>Qualifications:</strong> </p>
+                    {% for p in b %}
+                    <ul><li>{{p.Qualification}}</li></ul>
+                    <!-- <ul><li>Bachelor&#8217;s degree 2-7 Years of experience</li><li>Experience must be in IT Service based company</li></ul> -->
+                    {% endfor %}
+
+                    <p class="mb-2"><strong>Skills:</strong> </p>
+                    {% for p in c %}
+                    <ul><li>{{p.Skills}}</li></ul>
+                    {% endfor %}
+                    <!-- <ul><li>Lead Generation</li><li>Bidding</li><li>Project Execution / Coordination (It would be great if you have like this)</li><li>Fluent English Communication</li></ul> -->
+
+                    <!-- <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Kate Winslet</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">1 April 1990</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">10 Years</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+012 345 6789</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">info@example.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">123 Street, New York, USA</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                    </div> -->
+                    <!-- <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a> -->
+                  </div>
+                  
+      
+                <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+                    <form action="{% url 'job_apply'  %}" method="POST" name="file-upload-form" enctype="multipart/form-data" role="form" class="php-email-form" id="my-form" accept-charset="utf-8">
+                      {% csrf_token %}
+                      <div class="row">
+                          <div class="section-title">
+                              <h3>Apply for this position</h3>
+                              <p></p>
+                            </div>
+
+                            <style>
+                              .comment {
+                                resize: none;
+                                height: 180px;
+                                width: 390px;
+                              
+                                  border-radius: 4px;
+                                border-color: #47b2e4;
+                              }
+                            </style>
+                        
+                        <!-- <div class="form-group col-md-6">-->
+                        <div class="form-group">
+                          <h6>First Name</h6>
+                          <!-- <label for="name">Your Name</label> -->
+                          <input type="text" name="fname" class="form-control"  required>
+                        </div>
+
+                        <div class="form-group">
+                          <h6>Last Name</h6>
+                          <!-- <label for="name">Your Name</label> -->
+                          <input type="text" name="lname" class="form-control"  required>
+                        </div>
+
+              
+                        <div class="form-group">
+                          <h6>Email</h6>
+                          <!-- <label for="name">Your Email</label> -->
+                          <input type="email" class="form-control" name="email"  required>
+                        </div>
+                      
+
+                        <div class="form-group">
+                          <h6>Phone</h6>
+                          <!-- <label for="name">Subject</label> -->
+                          <input type="text" class="form-control" name="phone"  required>
+                        </div>
+
+                        <h6>Cover Letter</h6>
+                        <div class="form-group">
+                          <!-- <label for="name">Message</label> -->
+                          <textarea class="comment"  name="cletter" rows="7	" required></textarea>
+                        </div>
+
+                        <h6>Upload CV/Resume</h6>
+                        <div class="form-group">
+                          <input type="file" name="resume"  accept=".pdf, .doc, .docx"  required="required"  id="fl"><br>
+                          <small>Allowed Types - .pdf, .doc, .docx</small>
+                        </div>
+                          
+                        <!-- <input type="file" name="awsm_file" class="awsm-job-form-field awsm-resume-file-control awsm-job-form-control awsm-form-file-control" id="awsm-application-file" required data-msg-required="This field is required." accept=".pdf, .doc, .docx" /><small>Allowed Type(s): .pdf, .doc, .docx</small></div> -->
+                          <div class="text-center"><button type="submit">Apply</button></div> 
+                                  
+                    </form>  
+                   
+                    
+                </div>
+                     
+              </div>
+              <hr>
+            
+            </div>  
+          
+      </section>
+	
+</body>
+</html>
+
+{% endblock %}
